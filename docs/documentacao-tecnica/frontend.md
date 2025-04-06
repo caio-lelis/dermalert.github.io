@@ -122,3 +122,9 @@ Isso abrirá o Expo DevTools no navegador. A partir dele, você pode:
 - Executar no emulador Android
 
 - Abrir em navegador com Web Preview
+
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor | Revisor |
+| :----: | ---- | --------- | ----- | ------- |
+| `1.0`  |05/04/2025| Cria documento e adiciona conteúdo completo | Izabella Alves |Davi Rodrigues  |

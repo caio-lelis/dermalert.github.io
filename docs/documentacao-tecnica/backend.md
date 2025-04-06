@@ -97,3 +97,10 @@ Gerenciador de dependências e ambientes virtuais para Python, que simplifica a 
 
 ## 🚀 Como rodar a aplicação
 
+
+
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor | Revisor |
+| :----: | ---- | --------- | ----- | ------- |
+| `1.0`  |05/04/2025| Cria documento e adiciona conteúdo, exceto "Como rodar a aplicação" | Izabella Alves |Davi Rodrigues  |
