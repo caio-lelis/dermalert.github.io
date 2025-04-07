@@ -36,6 +36,8 @@ Se aplicável, adicione capturas de tela para ajudar a explicar seu problema.
 
 Adicione uma possível solução se caso tiver alguma.
 
+------
+
 **Histórico de versões**
 | Versão | Data       | Descrição                   | Autor(es)     | Revisor(es) |
 |--------|------------|-----------------------------|---------------|-------------|
