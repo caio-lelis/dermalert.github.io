@@ -1,11 +1,8 @@
 ---
 nome: Relatar Bug
 sobre: Crie um relatório para nos ajudar a melhorar
-titulo: "[BUG] Descreva o problema"
-rótulo: bug
 
 ---
-
 ---
 
 # 🐛 Descreva o bug
@@ -41,5 +38,5 @@ Adicione uma possível solução se caso tiver alguma.
 **Histórico de versões**
 | Versão | Data       | Descrição                   | Autor(es)     | Revisor(es) |
 |--------|------------|-----------------------------|---------------|-------------|
-| 1.0    | 07/04/2025 | Criação do tamplate da issue BUG | [Esther Sena Martins](https://github.com/esmsena) | Todos |
+| 1.0    | 07/04/2025 | Criação do template da issue BUG | [Esther Sena Martins](https://github.com/esmsena) | Todos |
 
