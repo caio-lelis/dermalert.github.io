@@ -159,4 +159,4 @@ Substitua "descrição da migração" por um resumo das mudanças efetuadas.
 | Versão | Data | Descrição | Autor | Revisor |
 | :----: | ---- | --------- | ----- | ------- |
 | `1.0`  |05/04/2025| Cria documento e adiciona conteúdo, exceto "Como rodar a aplicação" | Izabella Alves |Davi Rodrigues  |
-| `1.1`  |08/04/2025| Adiciona tópico "Como rodar a aplicação" | Izabella Alves | |
+| `1.1`  |08/04/2025| Adiciona tópico "Como rodar a aplicação" | Izabella Alves | [Esther Sena Martins](https://github.com/esmsena) |
