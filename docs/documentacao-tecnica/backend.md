@@ -97,10 +97,66 @@ Gerenciador de dependências e ambientes virtuais para Python, que simplifica a 
 
 ## 🚀 Como rodar a aplicação
 
+1. Clonar o repositório:
 
+```bash
+git clone https://github.com/DermAlert/backend.git
+```
+
+Navegar até o diretório do projeto:
+
+```bash
+cd backend
+```
+
+2. Configurar as variáveis de ambiente:
+
+Renomeie o arquivo .env.example para .env e ajuste os valores conforme as configurações do seu ambiente (podem ser valores aleatórios).
+
+3. Construir e iniciar os contêineres Docker:
+
+```bash
+docker-compose up -d --build
+```
+
+Este comando irá construir as imagens necessárias e iniciar os serviços definidos no docker-compose.yml em segundo plano.
+
+4. Crie o banco de dados:
+
+Execute o seguinte comando para acessar o contêiner do banco de dados:
+
+```bash
+docker-compose exec db psql -U postgres
+```
+
+Depois, dentro do prompt do PostgreSQL:
+
+```bash
+CREATE DATABASE derma;
+\q
+```
+
+5. Aplicar as migrações do banco de dados:
+
+```bash
+docker-compose exec web poetry run alembic upgrade head
+```
+
+Este comando executa as migrações pendentes, garantindo que o esquema do banco de dados esteja atualizado.
+
+6. (Opcional) Criar uma nova migração:
+
+Caso sejam feitas alterações nos modelos de dados, uma nova migração pode ser gerada com:
+
+```bash
+docker-compose exec web alembic revision --autogenerate -m "descrição da migração"
+```
+
+Substitua "descrição da migração" por um resumo das mudanças efetuadas.
 
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :----: | ---- | --------- | ----- | ------- |
 | `1.0`  |05/04/2025| Cria documento e adiciona conteúdo, exceto "Como rodar a aplicação" | Izabella Alves |Davi Rodrigues  |
+| `1.1`  |08/04/2025| Adiciona tópico "Como rodar a aplicação" | Izabella Alves | |
