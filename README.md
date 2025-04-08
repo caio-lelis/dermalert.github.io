@@ -64,3 +64,10 @@ O site ficará acessível em:
 ```
 https://dermalert.github.io/land/dist/index.html
 ```
+
+### 📄 Sobre a landing page
+
+A landing page do projeto foi construída com **Vite + TailwindCSS** e está localizada em `docs/land`.  
+Ela é compilada com `npm run build` e integrada diretamente ao MkDocs, sendo servida como parte do site final.
+
+> 📌 Para instruções completas de desenvolvimento e manutenção da landing, consulte o [README da pasta `docs/land`](https://github.com/DermAlert/dermalert.github.io/blob/main/docs/land/README.md).
