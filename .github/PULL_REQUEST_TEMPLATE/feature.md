@@ -55,4 +55,4 @@ Se houver trabalho de acompanhamento relevante para este PR, liste quaisquer pro
 **Histórico de versões**
 | Versão | Data       | Descrição                   | Autor(es)     | Revisor(es) |
 |--------|------------|-----------------------------|---------------|-------------|
-| 1.0    | 07/04/2025 | Criação do tamplate do Pull Request para FEATURE (novo recurso)  | [Esther Sena Martins](https://github.com/esmsena) | Todos |
+| 1.0    | 07/04/2025 | Criação do template do Pull Request para FEATURE (novo recurso)  | [Esther Sena Martins](https://github.com/esmsena) | Todos |
