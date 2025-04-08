@@ -34,5 +34,5 @@ Forneça algumas notas para os revisores para ajudá-los a fornecer feedback dir
 **Histórico de versões**
 | Versão | Data       | Descrição                   | Autor(es)     | Revisor(es) |
 |--------|------------|-----------------------------|---------------|-------------|
-| 1.0    | 08/04/2025 | Criação do tamplate do PullRequest documentação | [Esther Sena Martins](https://github.com/esmsena) | Todos |
+| 1.0    | 08/04/2025 | Criação do template do PullRequest documentação | [Esther Sena Martins](https://github.com/esmsena) | Todos |
 | 1.1    | 08/04/2025 | Corrigindo erros ortograficos e adicionando topicos  | [Esther Sena Martins](https://github.com/esmsena) | Todos |
