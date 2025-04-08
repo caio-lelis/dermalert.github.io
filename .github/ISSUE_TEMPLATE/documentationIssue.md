@@ -13,4 +13,4 @@ Pesquise problemas abertos/fechados antes de enviar, pois alguém pode ter pergu
 **Histórico de versões**
 | Versão | Data       | Descrição                   | Autor(es)     | Revisor(es) |
 |--------|------------|-----------------------------|---------------|-------------|
-| 1.0    | 08/04/2025 | Criação do tamplate da ISSUE documentacion | [Esther Sena Martins](https://github.com/esmsena) | Todos |
+| 1.0    | 08/04/2025 | Criação do template da ISSUE documentacion | [Esther Sena Martins](https://github.com/esmsena) | Todos |
