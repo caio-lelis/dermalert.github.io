@@ -45,3 +45,7 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - land/dist/assets/index-D5Lwlgl_.css
+
+extra_javascript:
+  - land/dist/assets/index-BMjkV8U-.js
