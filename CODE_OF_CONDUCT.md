@@ -78,9 +78,3 @@ This Code of Conduct applies both within project spaces (such as repositories, f
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team through the issues section of the GitHub repository. All complaints will be reviewed and investigated, resulting in a response deemed necessary and appropriate to the circumstances, with special attention to the confidentiality of sensitive data, such as health information. The project team is obligated to maintain confidentiality regarding the reporter of an incident. Further details on specific enforcement policies may be posted separately.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions, as determined by other members of the project’s leadership.
-
-## Histórico de Versão
-
-| Versão | Data | Descrição | Autor | Revisor |
-| :----: | ---- | --------- | ----- | ------- |
-| `1.0`  |08/04/2025| Criação do documento | [Renan Araújo](https://github.com/renantfm4) |[xxxx](xxxx)  |
