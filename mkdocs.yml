@@ -1,10 +1,10 @@
-site_name: DERMALERT
+site_name: DermAlert
 repo_url: https://github.com/DermAlert/dermalert.github.io
 repo_name: DermAlert
 
 nav:
   - Home: index.md
-  - Documentação Técnica:
+  - Getting Started:
       - Frontend: documentacao-tecnica/frontend.md
       - Backend: documentacao-tecnica/backend.md
   - Código de Conduta: codigo-de-conduta.md
@@ -14,7 +14,7 @@ theme:
   name: material
   language: pt-BR
   favicon: assets/adaptive-icon.png
-  logo: assets/adaptive-icon.png
+  logo: assets/logo.png
 
   font:
     text: "Roboto"
@@ -33,15 +33,15 @@ theme:
       toggle:
         icon: material/weather-night
         name: Mudar para o modo escuro
-      primary: "#243447" 
-      accent: "#243447"
+      primary: "#1A4568" 
+      accent: "#1A4568"
 
     - scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Mudar para o modo claro
-      primary: "#243447" 
-      accent: "#243447" 
+      primary: "#1A4568" 
+      accent: "#1A4568" 
 
 extra_css:
   - stylesheets/extra.css
