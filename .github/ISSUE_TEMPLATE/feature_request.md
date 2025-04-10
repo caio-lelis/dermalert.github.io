@@ -1,10 +1,11 @@
 ---
-nome: Solicitação de Recurso
-sobre: Sugira uma ideia para o projeto
-titulo: "[FEATURE] Descreva a sugestão"
-rótulo: 
-
+name: ✨ Solicitar Funcionalidade
+about: Sugira uma nova funcionalidade ou melhoria.
+title: "[FEATURE] "
+labels: enhancement
+assignees: ''
 ---
+
 ----
 
 <!---
@@ -42,8 +43,4 @@ Pesquise problemas abertos/fechados antes de enviar, pois alguém pode ter pergu
 
 ------
 
-**Histórico de versões**
-| Versão | Data       | Descrição                   | Autor(es)     | Revisor(es) |
-|--------|------------|-----------------------------|---------------|-------------|
-| 1.0    | 07/04/2025 | Criação do template da issue FEATURE | [Esther Sena Martins](https://github.com/esmsena) | Todos |
 
