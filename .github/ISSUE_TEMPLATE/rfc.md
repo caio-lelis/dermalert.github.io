@@ -1,7 +1,11 @@
 ---
-nome: 💬 Solicitação de Comentário (RFC)
-sobre: ​​Discussão de recursos
+name: 🧠 RFC - Discussão Técnica
+about: Sugira uma proposta de mudança maior (Request for Comments).
+title: "[RFC] "
+labels: rfc
+assignees: ''
 ---
+
 
 <!---
 Obrigado por registrar um problema 😄! Antes de enviar, leia o seguinte:
@@ -25,7 +29,3 @@ Pesquise problemas abertos/fechados antes de enviar, pois alguém pode ter pergu
 
 ------
 
-**Histórico de versões**
-| Versão | Data       | Descrição                   | Autor(es)     | Revisor(es) |
-|--------|------------|-----------------------------|---------------|-------------|
-| 1.0    | 08/04/2025 | Criação do template da ISSUE Comentário | [Esther Sena Martins](https://github.com/esmsena) | Todos |
