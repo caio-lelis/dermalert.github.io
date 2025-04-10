@@ -1,8 +1,13 @@
 ---
-nome: Relatar Bug
-sobre: Crie um relatório para nos ajudar a melhorar
-
+name: 🐞 Reportar Bug
+about: Relate um bug ou problema que encontrou no sistema.
+title: "[BUG] "
+labels: bug
+assignees: ''
 ---
+
+
+
 ---
 
 # 🐛 Descreva o bug
@@ -35,8 +40,4 @@ Adicione uma possível solução se caso tiver alguma.
 
 ------
 
-**Histórico de versões**
-| Versão | Data       | Descrição                   | Autor(es)     | Revisor(es) |
-|--------|------------|-----------------------------|---------------|-------------|
-| 1.0    | 07/04/2025 | Criação do template da issue BUG | [Esther Sena Martins](https://github.com/esmsena) | Todos |
 
