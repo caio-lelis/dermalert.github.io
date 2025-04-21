@@ -22,12 +22,13 @@ As reuniões realizadas pela equipe podem ser vistas na tabela abaixo:
 | Reunião | Data de realização | Link da gravação |
 | ------- | ------------------ | ---------------- |
 | Reunião 1 | 03/04/2025 | Indisponível (problemas de gravação) |
-| Reunião 2 | 09/04/2025 | - |
-| Reunião 3 | 17/04/2025 | - |
+| Reunião 2 | 09/04/2025 | [Gravação](https://unbbr-my.sharepoint.com/personal/211063149_aluno_unb_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F211063149_aluno_unb_br%2FDocuments%2FGravações%2FGCES-20250409_181121-Gravação%20de%20Reunião%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E30ed96e7-4fe7-4476-b4fa-e17335553dea) |
+| Reunião 3 | 17/04/2025 | [Gravação](https://unbbr-my.sharepoint.com/personal/211063149_aluno_unb_br/_layouts/15/stream.aspx?id=%2Fpersonal%2F211063149_aluno_unb_br%2FDocuments%2FGravações%2FGCES-20250417_182850-Gravação%20de%20Reunião%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E63c40cf2-d65e-4e5b-abe8-27be3915e433) |
 
 
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :----: | ---- | --------- | ----- | ------- |
 | `1.0`  |19/04/2025| Criação do documento de Atas de Reuniões | [Henrique Galdino](https://github.com/hgaldino05) |[Vitor Pereira](https://github.com/vcpvitor)  |
+| `1.1`  |20/04/2025| Adicionando link para a gravação das reuniões | [Henrique Galdino](https://github.com/hgaldino05) |[Vitor Pereira](https://github.com/vcpvitor)  |
 
