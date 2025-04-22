@@ -5,44 +5,76 @@ Para que alterações entrem em produção (GitHub Pages), é necessário **rebu
 
 ## 🛠️ Preparar ambiente de desenvolvimento da landing
 
-> Execute os comandos abaixo para configurar o ambiente corretamente com as versões utilizadas no projeto.
+> Execute os passos abaixo conforme o sistema operacional do seu computador.
 
-### 1. Instalar NVM (Node Version Manager)
+---
 
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-source ~/.nvm/nvm.sh
-```
+### 🪟 Para usuários **Windows**:
 
-### 2. Instalar Node.js (versão LTS mais recente)
+1. **Instalar Node.js (versão LTS mais recente)**  
+   Baixe o instalador diretamente do site oficial:  
+   https://nodejs.org/pt
 
-```bash
-nvm install --lts
-nvm use --lts
-```
+   Durante a instalação, marque a opção para instalar também o `npm`.
 
-Verifique a instalação:
+2. **Verificar a instalação:**
 
-```bash
-node -v
-npm -v
-```
+   Abra o terminal (Prompt de Comando ou PowerShell) e digite:
 
-### 3. Instalar dependências do projeto
+   ```bash
+   node -v
+   npm -v
+   ```
 
-```bash
-cd docs/land
-npm install
-```
+3. **Instalar dependências do projeto:**
+
+   ```bash
+   cd docs/land
+   npm install
+   ```
+
+---
+
+### 🐧 Para usuários **Linux/macOS**:
+
+1. **Instalar NVM (Node Version Manager):**
+
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   source ~/.nvm/nvm.sh
+   ```
+
+2. **Instalar Node.js (versão LTS mais recente):**
+
+   ```bash
+   nvm install --lts
+   nvm use --lts
+   ```
+
+3. **Verificar a instalação:**
+
+   ```bash
+   node -v
+   npm -v
+   ```
+
+4. **Instalar dependências do projeto:**
+
+   ```bash
+   cd docs/land
+   npm install
+   ```
+
+---
 
 Isso instalará automaticamente as dependências corretas, incluindo:
 
 | Pacote        | Versão     |
 |---------------|------------|
-| `vite`        | `^6.2.5`    |
-| `tailwindcss` | `^3.4.1`    |
-| `postcss`     | `^8.5.3`    |
-| `autoprefixer`| `^10.4.21`  |
+| `vite`        | `^6.2.5`   |
+| `tailwindcss` | `^3.4.1`   |
+| `postcss`     | `^8.5.3`   |
+| `autoprefixer`| `^10.4.21` |
 
 ## 📁 Estrutura da pasta `docs/land`
 
@@ -62,13 +94,13 @@ Isso instalará automaticamente as dependências corretas, incluindo:
 
 Todos os comandos abaixo devem ser executados dentro da pasta `docs/land`.
 
-| Comando               | O que faz |
-|-----------------------|-----------|
-| `npm run dev`         | Abre o servidor de desenvolvimento com hot reload. Ideal para editar e visualizar ao vivo. |
-| `npm run build`       | Gera a versão final da landing em `dist/` (HTML, CSS, JS otimizados). |
-| `npm run preview`     | Abre um servidor local que simula o comportamento pós-build. |
-| `npm run build:preview` | Build + preview em sequência. Útil para revisar rapidamente. |
-| `npm run deploy`      | Publica a landing de forma isolada usando `gh-pages`. *(não usar se o deploy for feito via MkDocs)* |
+| Comando                | O que faz |
+|------------------------|-----------|
+| `npm run dev`          | Abre o servidor de desenvolvimento com hot reload. Ideal para editar e visualizar ao vivo. |
+| `npm run build`        | Gera a versão final da landing em `dist/` (HTML, CSS, JS otimizados). |
+| `npm run preview`      | Abre um servidor local que simula o comportamento pós-build. |
+| `npm run build:preview`| Build + preview em sequência. Útil para revisar rapidamente. |
+| `npm run deploy`       | Publica a landing de forma isolada usando `gh-pages`. *(não usar se o deploy for feito via MkDocs)* |
 
 ## 🚀 Fluxo completo para atualizar a landing integrada ao MkDocs
 
