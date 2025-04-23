@@ -23,5 +23,10 @@ dist-ssr
 *.sw?
 
 # Mkdocs statics
-
 site
+
+# Python venv
+venv
+
+# Vite build da landing
+/docs/land/dist/

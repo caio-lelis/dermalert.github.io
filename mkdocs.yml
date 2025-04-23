@@ -14,12 +14,8 @@ nav:
 theme:
   name: material
   language: pt-BR
-  favicon: assets/adaptive-icon.png
+  favicon: assets/adaptive-icon_black.png
   logo: assets/logo.png
-
-  font:
-    text: "Roboto"
-    code: "Roboto Mono"
 
   features:
     - navigation.instant
@@ -45,7 +41,7 @@ theme:
       accent: "#1A4568" 
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
   - land/dist/assets/index-D5Lwlgl_.css
 
 extra_javascript:
