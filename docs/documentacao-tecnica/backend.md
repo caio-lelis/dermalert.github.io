@@ -154,9 +154,13 @@ docker-compose exec web alembic revision --autogenerate -m "descrição da migra
 
 Substitua "descrição da migração" por um resumo das mudanças efetuadas.
 
+## Repositório
+O repositório do backend pode ser acessado [aqui](https://github.com/renantfm4/backend).	
+
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :----: | ---- | --------- | ----- | ------- |
 | `1.0`  |05/04/2025| Cria documento e adiciona conteúdo, exceto "Como rodar a aplicação" | Izabella Alves |Davi Rodrigues  |
 | `1.1`  |08/04/2025| Adiciona tópico "Como rodar a aplicação" | Izabella Alves | [Esther Sena Martins](https://github.com/esmsena) |
+| `1.2`  |23/04/2025| Adicionando link para o repositório | [Henrique Galdino](https://github.com/hgaldino05) |[Vitor Pereira](https://github.com/vcpvitor)  |
