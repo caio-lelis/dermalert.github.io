@@ -52,6 +52,21 @@ theme:
       primary: "#1A4568" 
       accent: "#1A4568" 
 
+plugins:
+        - glightbox:
+                  touchNavigation: true
+                  loop: false
+                  effect: zoom
+                  slide_effect: slide
+                  width: 100%
+                  height: auto
+                  zoomable: true
+                  draggable: true
+                  skip_classes:
+                          - custom-skip-class-name
+                  auto_caption: false
+                  caption_position: bottom
+                  
 extra_css:
   - stylesheets/extra.css
   - land/dist/assets/index-D5Lwlgl_.css

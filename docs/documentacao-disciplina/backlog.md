@@ -1,8 +1,8 @@
 # Backlog
 
-<!-- <img src="https://github.com/DermAlert/dermalert.github.io/blob/main/docs/assets/backlog.png?raw=true" alt="Quadro do Backlog"/> -->
+<img src="https://github.com/DermAlert/dermalert.github.io/blob/main/docs/assets/backlog.png?raw=true" alt="Quadro do Backlog"/>
 
-<img src="../assets/backlog.png" alt="Quadro do Backlog" style="object-fit: cover;">
+<!-- <img src="../assets/backlog.png" alt="Quadro do Backlog" style="object-fit: cover;"> -->
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :----: | ---- | --------- | ----- | ------- |
