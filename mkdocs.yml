@@ -4,11 +4,20 @@ repo_name: DermAlert
 
 nav:
   - Home: index.md
-  - Getting Started:
+  - Documentação técnica:
       - Frontend: documentacao-tecnica/frontend.md
       - Backend: documentacao-tecnica/backend.md
   - Código de Conduta: codigo-de-conduta.md
+  - Documentação GCES: 
+      - Equipe: documentacao-disciplina/equipe.md
+      - Atas de Reunião: documentacao-disciplina/atas-reunioes.md
+      - Backlog do projeto: documentacao-disciplina/backlog.md
+      - Checklists: documentacao-disciplina/checklist.md
   - Guia de Contribuição: guia-de-contribuicao.md
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 theme:
   name: material

@@ -123,8 +123,13 @@ Isso abrirá o Expo DevTools no navegador. A partir dele, você pode:
 
 - Abrir em navegador com Web Preview
 
+## Repositório
+
+O repositório do frontend pode ser acessado [aqui](https://github.com/DaviRogs/applicativo).
+
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :----: | ---- | --------- | ----- | ------- |
 | `1.0`  |05/04/2025| Cria documento e adiciona conteúdo completo | Izabella Alves |Davi Rodrigues  |
+| `1.1`  |23/04/2025| Adicionando link para o repositório | [Henrique Galdino](https://github.com/hgaldino05) |[Vitor Pereira](https://github.com/vcpvitor)  |
