@@ -9,12 +9,12 @@ nav:
       - Frontend: documentacao-tecnica/frontend.md
       - Backend: documentacao-tecnica/backend.md
   - Código de Conduta: codigo-de-conduta.md
+  - Guia de Contribuição: guia-de-contribuicao.md
   - Documentação GCES: 
       - Equipe: documentacao-disciplina/equipe.md
       - Atas de Reunião: documentacao-disciplina/atas-reunioes.md
-      - Backlog do projeto: documentacao-disciplina/backlog.md
       - Checklists: documentacao-disciplina/checklist.md
-  - Guia de Contribuição: guia-de-contribuicao.md
+      - Backlog do projeto: documentacao-disciplina/backlog.md
 
 markdown_extensions:
   - pymdownx.tasklist:
@@ -49,6 +49,21 @@ theme:
       primary: "#1A4568" 
       accent: "#1A4568" 
 
+plugins:
+        - glightbox:
+                  touchNavigation: true
+                  loop: false
+                  effect: zoom
+                  slide_effect: slide
+                  width: 100%
+                  height: auto
+                  zoomable: true
+                  draggable: true
+                  skip_classes:
+                          - custom-skip-class-name
+                  auto_caption: false
+                  caption_position: bottom
+                  
 extra_css:
   - assets/stylesheets/extra.css
   - land/dist/assets/index-D5Lwlgl_.css

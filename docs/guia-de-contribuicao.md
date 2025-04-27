@@ -103,6 +103,7 @@ Utilizamos as [Issues](https://docs.github.com/pt/issues/tracking-your-work-wit
 ---
 
 Este guia foi elaborado com base nas [práticas recomendadas para repositórios](https://docs.github.com/pt/repositories/creating-and-managing-repositories/best-practices-for-repositories) e em guias de contribuição de projetos open source. Seguindo estas diretrizes, garantimos um ambiente de colaboração saudável e produtivo para todos os envolvidos no projeto DermAlert.
+
 ## Histórico de Versão
 
 | Versão | Data | Descrição | Autor | Revisor |
