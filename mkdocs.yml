@@ -50,28 +50,26 @@ theme:
       accent: "#1A4568" 
 
 plugins:
-        - glightbox:
-                  touchNavigation: true
-                  loop: false
-                  effect: zoom
-                  slide_effect: slide
-                  width: 100%
-                  height: auto
-                  zoomable: true
-                  draggable: true
-                  skip_classes:
-                          - custom-skip-class-name
-                  auto_caption: false
-                  caption_position: bottom
-                  
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+  - exclude:
+      glob:
+        - "land/node_modules/**"
+
 extra_css:
   - assets/stylesheets/extra.css
   - land/dist/assets/index-D5Lwlgl_.css
 
 extra_javascript:
   - land/dist/assets/index-BMjkV8U-.js
-
-plugins:
-  - exclude:
-      glob:
-        - "land/node_modules/**"

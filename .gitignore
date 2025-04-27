@@ -26,7 +26,7 @@ dist-ssr
 site
 
 # Python venv
-venv
+.venv
 
 # Vite build da landing
 /docs/land/dist/
