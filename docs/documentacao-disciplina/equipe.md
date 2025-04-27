@@ -15,6 +15,8 @@ A equipe responsável pela funcionalidade de análise de imagens é composta por
 | <img src="https://github.com/DermAlert/dermalert.github.io/blob/main/docs/assets/equipe/Renan.jpg?raw=true" alt="Renan Araujo"  style="width: 150px; height: 150px; object-fit: cover;"> | Renan Araújo | [renantfm4](https://github.com/renantfm4) | Contributor |
 | <img src="https://github.com/DermAlert/dermalert.github.io/blob/main/docs/assets/equipe/Vitor.jpg?raw=true" alt="Vitor Pereira"  style="width: 150px; height: 150px; object-fit: cover;"> | Vitor Pereira | [vcpvitor](https://github.com/vcpvitor) | Contributor |
 
+## Histórico de Versões
+
 | Versão | Data | Descrição | Autor | Revisor |
 | :----: | ---- | --------- | ----- | ------- |
 | `1.0`  |25/04/2025| Criação do documento de Equipe | [Henrique Galdino](https://github.com/hgaldino05) |[Vitor Pereira](https://github.com/vcpvitor)  |
