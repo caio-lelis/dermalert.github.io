@@ -5,16 +5,24 @@ docs_dir: docs
 
 nav:
   - Home: index.md
-  - Documentação técnica:
-      - Frontend: documentacao-tecnica/frontend.md
-      - Backend: documentacao-tecnica/backend.md
-  - Código de Conduta: codigo-de-conduta.md
-  - Guia de Contribuição: guia-de-contribuicao.md
-  - Documentação GCES: 
-      - Equipe: documentacao-disciplina/equipe.md
-      - Atas de Reunião: documentacao-disciplina/atas-reunioes.md
-      - Checklists: documentacao-disciplina/checklist.md
-      - Backlog do projeto: documentacao-disciplina/backlog.md
+  - Como Funciona:
+    - como-funciona/como-contribuir.md
+    - como-funciona/codigo-de-conduta.md
+    - como-funciona/guia-de-contribuicao.md
+  - Ajuda e Suporte: 
+    - ajuda-e-suporte/problemas-comuns.md
+    - Documentação técnica:
+      - Frontend: ajuda-e-suporte/documentacao-tecnica/frontend.md
+      - Backend: ajuda-e-suporte/documentacao-tecnica/backend.md
+    - Documentação GCES: 
+      - Equipe: ajuda-e-suporte/documentacao-gces/equipe.md
+      - Atas de Reunião: ajuda-e-suporte/documentacao-gces/atas-reunioes.md
+      - Checklists: ajuda-e-suporte/documentacao-gces/checklist.md
+      - Backlog do projeto: ajuda-e-suporte/documentacao-gces/backlog.md
+  - Curso de Extensão:
+    - curso-de-extensao/sobre-o-curso.md
+  - Sobre:
+    - sobre/sobre-o-projeto.md
 
 markdown_extensions:
   - pymdownx.tasklist:
