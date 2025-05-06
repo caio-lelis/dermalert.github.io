@@ -65,9 +65,64 @@ O site ficará acessível em:
 https://dermalert.github.io/land/dist/index.html
 ```
 
-### 📄 Sobre a landing page
+---
+
+## 🧭 Sobre a landing page
 
 A landing page do projeto foi construída com **Vite + TailwindCSS** e está localizada em `docs/land`.  
 Ela é compilada com `npm run build` e integrada diretamente ao MkDocs, sendo servida como parte do site final.
 
 > 📌 Para instruções completas de desenvolvimento e manutenção da landing, consulte o [README da pasta `docs/land`](https://github.com/DermAlert/dermalert.github.io/blob/main/docs/land/README.md).
+
+---
+
+## 📝 Sobre o blog do projeto
+
+O blog foi construído com o plugin `mkdocs-blog` e permite registrar publicações, diários técnicos e tutoriais.
+
+### 🧱 Estrutura dos posts
+
+Os posts ficam organizados em `docs/blog/posts`, onde cada pasta representa um post.
+
+Exemplo de estrutura:
+```
+docs/
+└── blog/
+    └── posts/
+        └── 2025-05-06-exemplo-de-colina/
+            ├── 2025-05-06-exemplo-de-colina.md
+            └── image.png
+```
+
+### ✏️ Formato dos arquivos `.md`
+
+Cada post deve conter um **front-matter** no início do arquivo, como este:
+
+```yaml
+---
+title: Exemplo de Colina
+date: 2025-05-06
+image: /assets/posts/bg/montanha_bg.png
+description: Um breve olhar sobre uma trilha bucólica.
+icon: /assets/posts/icons/montanha_icon.png
+---
+```
+
+- Os caminhos de `image` e `icon` são relativos à pasta `docs/assets/posts/`.
+- As mídias usadas **dentro do post** devem estar na mesma pasta do `.md` e referenciadas com caminho relativo, como `./image.png`.
+
+### 🧪 Visualizar localmente
+
+Para testar o blog em tempo real:
+
+```bash
+mkdocs serve
+```
+
+E acesse:
+
+```
+http://127.0.0.1:8000/blog/
+```
+
+Você verá os cards de cada publicação com imagem, título, descrição e data.

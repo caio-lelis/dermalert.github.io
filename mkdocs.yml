@@ -23,7 +23,9 @@ nav:
     - curso-de-extensao/sobre-o-curso.md
   - Sobre:
     - sobre/sobre-o-projeto.md
-
+  - Blog:
+    - blog/index.md
+    
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -33,6 +35,7 @@ theme:
   language: pt-BR
   favicon: assets/adaptive-icon_black.png
   logo: assets/logo.png
+  custom_dir: overrides
 
   features:
     - navigation.instant
@@ -55,7 +58,7 @@ theme:
         icon: material/weather-sunny
         name: Mudar para o modo claro
       primary: "#1A4568" 
-      accent: "#1A4568" 
+      accent: "#1A4568"
 
 plugins:
   - glightbox:
@@ -74,6 +77,11 @@ plugins:
   - exclude:
       glob:
         - "land/node_modules/**"
+  - blog:
+      # habilita/desabilita o cálculo automático
+      post_readtime: true
+      # Número de palavras consideradas por minuto
+      post_readtime_words_per_minute: 180
 
 extra_css:
   - assets/stylesheets/extra.css
