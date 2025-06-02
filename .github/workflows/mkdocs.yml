@@ -1,0 +1,30 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # roda o deploy quando houver push na branch main
+
+permissions:
+  contents: write  # necessário para permitir o deploy no GitHub Pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar o repositório
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'  # você pode trocar a versão se precisar
+
+      - name: Instalar dependências do MkDocs
+        run: |
+          pip install -r requirements.txt
+
+      - name: Publicar com MkDocs
+        run: |
+          mkdocs gh-deploy --force
