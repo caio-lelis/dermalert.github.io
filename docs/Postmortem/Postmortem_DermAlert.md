@@ -68,20 +68,25 @@ A ambientação incluiu:
 ---
 ## 7. 🔄 Pipeline do Projeto
 
-A equipe implementou uma pipeline MLOps utilizando **Airflow** e **GitHub Actions**, visando automatizar etapas críticas como:
+A equipe implementou uma pipeline MLOps utilizando **Airflow** e **GitHub Actions**,  com o objetivo de automatizar e orquestrar etapas críticas do ciclo de vida do modelo, garantindo reprodutibilidade, qualidade e confiabilidade nas entregas.
 
+**Etapas Automatizadas:**
 - Validação da qualidade da imagem (com BRISQUE)
 - Execução do modelo de classificação
 - Geração de logs e alertas em tempo real
 - Testes automatizados antes de cada deploy no backend
+- Análise estática de código com Pylint e ESLint, assegurando aderência a boas práticas e padronização de estilo.
 
 **Dificuldades:**  
-Configurar a execução paralela das tarefas e lidar com erros silenciosos no Airflow.
+- Configurar a execução paralela das tarefas
+- Lidar com erros silenciosos no Airflow
+- Integração consistente das ferramentas de lint com os ambientes de desenvolvimento e CI.
 
 **Soluções:**  
 - Criação de DAGs bem segmentadas
 - Monitoramento com alertas por log
 - Padronização de diretórios e volumes no Docker
+- Configuração dedicada do Pylint e ESLint, com regras adaptadas à arquitetura do projeto e integração com o pipeline.
 
 ---
 
