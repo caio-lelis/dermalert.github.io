@@ -129,7 +129,6 @@ Para superar os desafios enfrentados, foram aplicadas as seguintes abordagens:
 |---------|---------|
 | Backend mal documentado | Atualização completa do `README.md` e adição de documentação relacionada ao projeto e automoção de issue e pullrequests |
 | Resultado alarmante para usuário final | Modal com linguagem moderada e ícones visuais |
-| Falta de versionamento da API | Padronização de rotas (`/api/v1/`) |
 | Ambiente local difícil de configurar | Criação de script de setup automatizado |
 
 ---
