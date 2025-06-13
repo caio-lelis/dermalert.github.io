@@ -85,22 +85,41 @@ Configurar a execução paralela das tarefas e lidar com erros silenciosos no Ai
 
 ---
 
-## 8. 🧩 Desenvolvimento da Nova Funcionalidade
+## 8. Desenvolvimento da Nova Funcionalidade
 
 **Funcionalidade desenvolvida:** Classificação da imagem enviada pelo usuário.
 
-### Principais Dificuldades:
-- Escolher uma métrica eficaz de qualidade de imagem que funcionasse bem sem ter que ter uma imagem de referência.
-- Ajustar a sensibilidade do modelo para evitar falsos alarmes
-- Tornar a comunicação dos resultados clara e tranquila para o usuário
+### Objetivo
 
-**Soluções Encontradas:**
-- Uso da métrica BRISQUE para validar a imagem
-- Testes iterativos com imagens reais
-- Reformulação do modal de pré-diagnóstico com linguagem cuidadosa
-- Utilização de pipeline automatizada para validação e inferência do modelo
-- Pipeline MLOps com etapas de verificação de qualidade, classificação e geração de alerta
+A nova funcionalidade foi desenvolvida com o propósito de permitir que usuários da plataforma Dermalet possam enviar imagens de possíveis lesões de pele para análise automatizada. A partir da imagem submetida, um modelo de machine learning previamente treinado realiza a classificação da lesão, gerando um pré-diagnóstico que é apresentado ao usuário de forma clara e cuidadosa.
 
+### Tecnologias Utilizadas
+
+- **BRISQUE**: Métrica sem referência para avaliação da qualidade da imagem.
+- **NIMA (Neural Image Assessment)**: Utilizada como apoio na avaliação estética e perceptual da imagem.
+- **Modelo de classificação**: Obtido por meio da plataforma Hugging Face, treinado para identificar padrões em lesões de pele.
+- **endpoint com processo automatizado**: o endpoint faz todas as etapas de verificação de qualidade, inferência do modelo e resposta ao usuário em somente uma chamada a API.
+
+### Principais Desafios
+
+Durante o desenvolvimento, diversas dificuldades foram identificadas, exigindo soluções técnicas e de UX cuidadosamente elaboradas:
+
+- **Avaliação da qualidade da imagem sem referência**: Era necessário garantir que imagens de baixa qualidade fossem descartadas ou sinalizadas, mesmo sem uma imagem ideal para comparação.
+- **Ajuste da sensibilidade do modelo de classificação**: O modelo precisava ser calibrado para minimizar falsos positivos e falsos negativos, garantindo maior confiabilidade no pré-diagnóstico.
+- **Clareza e empatia na comunicação dos resultados**: O resultado da análise poderia gerar preocupação ao usuário. Por isso, foi fundamental desenvolver uma linguagem acessível, objetiva e não alarmista.
+
+### Soluções Implementadas
+
+Para superar os desafios enfrentados, foram aplicadas as seguintes abordagens:
+
+- **Validação da qualidade da imagem com BRISQUE**: A métrica BRISQUE foi adotada por sua capacidade de avaliar a qualidade perceptual da imagem de forma autônoma, sem necessidade de referência.
+- **Suporte com NIMA**: Utilizado como complemento à avaliação de qualidade, contribuindo para uma análise mais robusta.
+- **Testes com imagens reais**: Foram realizados testes sistemáticos com imagens variadas para calibrar o modelo e avaliar o desempenho em diferentes condições.
+- **Reformulação do modal de pré-diagnóstico**: A interface de apresentação dos resultados foi cuidadosamente revisada, com foco em uma comunicação empática e compreensível.
+- **Processo automatizado de classificação**: Toda a jornada da imagem — desde o envio até o resultado final — foi estruturada em um processo automatizado que inclui:
+  - Verificação da qualidade da imagem
+  - Classificação por meio do modelo de machine learning
+  - Geração de alerta ou retorno informativo ao usuário
 
 ---
 
