@@ -150,9 +150,6 @@ A equipe implementou uma pipeline MLOps utilizando **GitHub Actions**,  com o ob
 - Manter a consistência entre os ambientes de desenvolvimento local e CI.
 
 **Soluções:**  
-- Criação de DAGs bem segmentadas
-- Monitoramento com alertas por log
-- Padronização de diretórios e volumes no Docker
 - Padronização do código-fonte com regras específicas do Pylint e ESLint integradas ao pipeline.
 - Integração com SonarCloud
 
@@ -183,8 +180,7 @@ A equipe implementou uma pipeline MLOps utilizando **GitHub Actions**,  com o ob
 |---------|---------|
 | Backend mal documentado | Atualização completa do `README.md` e adição de documentação relacionada ao projeto e automoção de issue e pullrequests |
 | Resultado alarmante para usuário final | Modal com linguagem moderada e ícones visuais |
-| Falta de versionamento da API | Padronização de rotas (`/api/v1/`) |
-| Ambiente local difícil de configurar | Criação de script de setup automatizado |
+| Ambiente local difícil de configurar | Criação de tutorial de como subir o ambiente |
 
 ---
 
