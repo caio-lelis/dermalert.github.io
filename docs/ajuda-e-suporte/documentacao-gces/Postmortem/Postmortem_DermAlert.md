@@ -25,7 +25,6 @@ O **DermAlert** é um aplicativo mobile que auxilia na detecção de possíveis 
 - **Documentação:** Estruturação do projeto, instruções de instalação, guias de uso e contribuição.
 
 ---
-
 ## 3. 🧭 Ambientação da Equipe
 
 A ambientação incluiu:
@@ -34,19 +33,18 @@ A ambientação incluiu:
 - Configuração dos ambientes (Python, React Native).
 - Definição de papéis e responsabilidades.
 
-**Dificuldade inicial:** Falta de instruções claras para rodar o backend e o frontend, e escolha de bibliotecas e dependências.  
-**Solução:** Produção de documentação prática com exemplos e passo a passo de instalação, e buscas e testes de ferramentas adequadas para o objetivo do projeto.
+*Dificuldade inicial:* Falta de instruções claras para rodar o backend e o frontend, e escolha de bibliotecas e dependências.  
+*Solução:* Produção de documentação prática com exemplos e passo a passo de instalação, e buscas e testes de ferramentas adequadas para o objetivo do projeto.
 
 ---
 
 ## 4. 📄 Melhorias na Documentação
 
-- Atualização do `README.md` com instruções claras e objetivas, dentro dos repositórios da Documentação, Backend, Frontend e Machine Learning.
+- Atualização do README.md com instruções claras e objetivas, dentro dos repositórios da Documentação, Backend, Frontend e Machine Learning.
 - Adição de diagramas explicativos sobre a arquitetura do projeto em alguns modelos do README.
 - Detalhamento dos endpoints da API (métodos, parâmetros e retornos).
 - Inclusão de um guia de contribuição e checklist de boas práticas.
 - Automação de Issues e Pull-Requests, facilitando e tornando os mais fáceis e seguindo padrões.
-
 ---
 
 ## 5. 🧠 Aprimoramentos e Novas Funcionalidades no Backend
