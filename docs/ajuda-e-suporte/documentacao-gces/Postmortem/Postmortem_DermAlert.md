@@ -25,7 +25,6 @@ O **DermAlert** é um aplicativo mobile que auxilia na detecção de possíveis 
 - **Documentação:** Estruturação do projeto, instruções de instalação, guias de uso e contribuição.
 
 ---
-
 ## 3. 🧭 Ambientação da Equipe
 
 A ambientação incluiu:
@@ -34,27 +33,92 @@ A ambientação incluiu:
 - Configuração dos ambientes (Python, React Native).
 - Definição de papéis e responsabilidades.
 
-**Dificuldade inicial:** Falta de instruções claras para rodar o backend e o frontend, e escolha de bibliotecas e dependências.  
-**Solução:** Produção de documentação prática com exemplos e passo a passo de instalação, e buscas e testes de ferramentas adequadas para o objetivo do projeto.
+*Dificuldade inicial:* Falta de instruções claras para rodar o backend e o frontend, e escolha de bibliotecas e dependências.  
+*Solução:* Produção de documentação prática com exemplos e passo a passo de instalação, e buscas e testes de ferramentas adequadas para o objetivo do projeto.
 
 ---
 
 ## 4. 📄 Melhorias na Documentação
 
-- Atualização do `README.md` com instruções claras e objetivas, dentro dos repositórios da Documentação, Backend, Frontend e Machine Learning.
+- Atualização do README.md com instruções claras e objetivas, dentro dos repositórios da Documentação, Backend, Frontend e Machine Learning.
 - Adição de diagramas explicativos sobre a arquitetura do projeto em alguns modelos do README.
 - Detalhamento dos endpoints da API (métodos, parâmetros e retornos).
 - Inclusão de um guia de contribuição e checklist de boas práticas.
 - Automação de Issues e Pull-Requests, facilitando e tornando os mais fáceis e seguindo padrões.
+---
+
+## 5. 🧠 Aprimoramentos e Novas Funcionalidades no Backend
+
+### 5.1 Avaliação de Qualidade de Imagem com BRISQUE
+- **Implementação**: Integração do algoritmo BRISQUE (Blind/Referenceless Image Spatial Quality Evaluator) para avaliação automática da qualidade de imagens dermatoscópicas.
+- **Como funciona**: O BRISQUE utiliza Estatísticas de Cenas Naturais (NSS) e Regressão de Vetores de Suporte (SVR) para atribuir uma pontuação de 0 a 100, onde valores menores indicam maior qualidade perceptual. Não requer imagem de referência, sendo ideal para aplicações em tempo real.
+- **Benefícios**:
+  - Garante a análise de imagens nítidas, reduzindo falsos positivos/negativos em diagnósticos.
+  - Eficiente computacionalmente, com processamento rápido e sem transformações complexas.
+  - Quantifica distorções (ruído, desfoque, compressão) para assegurar a confiabilidade das imagens.
+
+### 5.2 Integração de Modelos de Classificação de Lesões de Pele
+Dois modelos de aprendizado profundo foram incorporados para análise de imagens dermatoscópicas, oferecendo maior precisão na detecção de condições cutâneas:
+
+- **Soma_Skin_Cancer_Classifier**:
+  - **Descrição**: Modelo baseado na arquitetura ResNet-18, ajustado com o conjunto de dados HAM10000 para classificação binária de lesões (benigna ou maligna).
+  - **Características**:
+    - Entrada: Imagens RGB (224x224 pixels).
+    - Saída: Probabilidade de malignidade (0: Benigna, 1: Maligna).
+    - Acurácia: 89% em testes.
+  - **Impacto**: Identificação confiável de lesões potencialmente malignas, com foco em simplicidade e eficiência.
+
+- **Skin_Cancer-Image_Classification**:
+  - **Descrição**: Modelo baseado em Vision Transformer (ViT), treinado no Skin Cancer Dataset para classificação multiclasse de lesões, incluindo melanoma, carcinoma basocelular, queratose actínica, entre outros.
+  - **Características**:
+    - Entrada: Imagens processadas com patch size de 16x16.
+    - Saída: Classificação em 7 categorias de lesões cutâneas.
+    - Acurácia: Até 96% em validação.
+    - Treinamento: 5 épocas, otimizador Adam, função de perda Cross-Entropy.
+  - **Impacto**: Diagnósticos mais detalhados, permitindo a identificação de tipos específicos de lesões com alta precisão.
+
+### 5.3 Endpoint para Alertas de Casos Suspeitos
+- **Funcionalidade**: Novo endpoint que gera alertas automáticos para casos suspeitos de lesões malignas, com base nas predições dos modelos de classificação.
+- **Exemplo de Resposta**:
+  ```json
+  {
+    "message": "Lesão e imagens cadastradas com sucesso",
+    "lesao": {
+      "id": 14,
+      "local_lesao_id": 1,
+      "local_lesao_nome": "Cabeça",
+      "descricao_lesao": "Teste de lesão suspeita"
+    },
+    "imagens": [
+      "imagens-lesoes/imagens-lesoes_20250525165547_80daf1a5.jpg"
+    ],
+    "tipos": ["benigno"],
+    "prediagnosticos": ["Nevo melanocítico"],
+    "descricoes-lesao": [
+      "Pintas benignas formadas por aglomerados de células produtoras de pigmento."
+    ]
+  }
+  ```
+- **Benefícios**:
+  - Notifica usuários e profissionais de saúde em tempo real sobre casos que requerem atenção.
+  - Integração fluida com sistemas de notificação para agilizar o acompanhamento médico.
+
+### 5.4 Refatoração e Padronização do Código
+- **Qualidade do Código**:
+  - **Verificação com Pylint**: Garantia de pontuação mínima de 8.0, seguindo as melhores práticas de desenvolvimento.
+  - **Formatação com Black**: Código formatado segundo o padrão PEP 8, assegurando legibilidade e consistência.
+- **Benefícios**:
+  - Maior manutenibilidade e escalabilidade do backend.
+  - Facilidade de colaboração entre desenvolvedores, com código claro e padronizado.
+  - Redução de erros e melhoria na robustez do sistema.
 
 ---
 
-## 5. 🧠 Melhorias e Adições no Backend
-
-- Verificação de qualidade de imagem com o algoritmo BRISQUE
-- Integração do modelo de classificação (acne, mancha, possível tumor)
-- Criação de endpoint para geração de alerta em casos suspeitos
-- Refatoração do código para maior clareza e padronização
+### Principais Melhorias
+1. **Qualidade de Imagem**: O BRISQUE assegura que apenas imagens de alta qualidade sejam processadas, aumentando a confiabilidade dos diagnósticos.
+2. **Classificação Avançada**: A integração de modelos ResNet-18 e ViT permite detectar e classificar lesões com alta precisão, abrangendo desde casos binários até multiclasses.
+3. **Alertas Automatizados**: O novo endpoint facilita a identificação rápida de casos suspeitos, melhorando a resposta a possíveis riscos.
+4. **Código Otimizado**: A refatoração com Pylint e Black garante um backend robusto, legível e preparado para futuras expansões.
 
 ---
 
@@ -68,20 +132,24 @@ A ambientação incluiu:
 ---
 ## 7. 🔄 Pipeline do Projeto
 
-A equipe implementou uma pipeline MLOps utilizando **Airflow** e **GitHub Actions**, visando automatizar etapas críticas como:
+A equipe implementou uma pipeline MLOps utilizando **GitHub Actions**,  com o objetivo de automatizar e orquestrar etapas críticas do ciclo de vida do modelo, garantindo reprodutibilidade, qualidade e confiabilidade nas entregas.
 
+**Etapas Automatizadas:**
 - Validação da qualidade da imagem (com BRISQUE)
 - Execução do modelo de classificação
 - Geração de logs e alertas em tempo real
 - Testes automatizados antes de cada deploy no backend
+- Análise estática de código do backend com Pylint.
+- Análise estática do código do frontend com Eslint e SonarCloud
 
 **Dificuldades:**  
-Configurar a execução paralela das tarefas e lidar com erros silenciosos no Airflow.
+- Configurar a execução paralela das tarefas
+- Eliminar falsos positivos e adaptar as regras do linting à realidade do projeto.
+- Manter a consistência entre os ambientes de desenvolvimento local e CI.
 
 **Soluções:**  
-- Criação de DAGs bem segmentadas
-- Monitoramento com alertas por log
-- Padronização de diretórios e volumes no Docker
+- Padronização do código-fonte com regras específicas do Pylint e ESLint integradas ao pipeline.
+- Integração com SonarCloud
 
 ---
 
@@ -110,8 +178,7 @@ Configurar a execução paralela das tarefas e lidar com erros silenciosos no Ai
 |---------|---------|
 | Backend mal documentado | Atualização completa do `README.md` e adição de documentação relacionada ao projeto e automoção de issue e pullrequests |
 | Resultado alarmante para usuário final | Modal com linguagem moderada e ícones visuais |
-| Falta de versionamento da API | Padronização de rotas (`/api/v1/`) |
-| Ambiente local difícil de configurar | Criação de script de setup automatizado |
+| Ambiente local difícil de configurar | Criação de tutorial de como subir o ambiente |
 
 ---
 
