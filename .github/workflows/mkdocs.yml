@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main  # roda o deploy quando houver push na branch main
+      - fix/mainpage  # roda o deploy quando houver push na branch fix/mainpage
 
 permissions:
   contents: write  # necessário para permitir o deploy no GitHub Pages
