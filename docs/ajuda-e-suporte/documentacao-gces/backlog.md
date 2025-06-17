@@ -27,7 +27,7 @@
 
 ## Backlog do Produto
 
-<img src="https://github.com/caio-lelis/dermalert.github.io/blob/main/docs/assets/backlog.png?raw=true alt="Backlog do Produto"/>
+<img src="https://github.com/caio-lelis/dermalert.github.io/blob/main/docs/assets/backlog.png?raw=true" alt="Backlog do Produto"/>
 
 <img src="https://github.com/caio-lelis/dermalert.github.io/blob/main/docs/assets/roadmap.png?raw=true" alt="Roadmap"/>
 
