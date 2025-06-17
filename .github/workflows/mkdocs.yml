@@ -14,17 +14,36 @@ jobs:
 
     steps:
       - name: Clonar o repositório
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+          cache: 'pip' # Adiciona cache para as dependências do Python
 
       - name: Instalar dependências do MkDocs
         run: |
           pip install -r requirements.txt
 
+      # --- INÍCIO DOS PASSOS ADICIONADOS ---
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*' # Usa a versão Long-Term Support mais recente
+          cache: 'npm'
+          cache-dependency-path: 'docs/land/package-lock.json' # Caminho para o cache do npm
+
+      - name: Construir a Landing Page (Vite)
+        # Define o diretório de trabalho para os comandos seguintes
+        working-directory: docs/land 
+        run: |
+          npm install
+          npm run build
+      
+      # --- FIM DOS PASSOS ADICIONADOS ---
+
       - name: Publicar com MkDocs
         run: |
-          mkdocs gh-deploy --force
+          mkdocs gh-deploy --force --clean
