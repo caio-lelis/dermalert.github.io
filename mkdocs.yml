@@ -18,7 +18,7 @@ nav:
       - Release I:
         - Equipe: ajuda-e-suporte/documentacao-gces/equipe.md
         - Atas de Reunião: ajuda-e-suporte/documentacao-gces/atas-reunioes.md
-        - Checklists: ajuda-e-suporte/documentacao-gces/checklist.md
+        - Checklist de entrega: ajuda-e-suporte/documentacao-gces/checklist.md
         - Backlog do projeto: ajuda-e-suporte/documentacao-gces/backlog.md
       - Release II:
         - Checklist da Entrega: ajuda-e-suporte/documentacao-gces/release2/checklist-2.md
@@ -32,6 +32,8 @@ nav:
     - sobre/sobre-o-projeto.md
   - Blog:
     - blog/index.md
+  - Postmortem:
+    - ajuda-e-suporte/documentacao-gces/postmortem/Postmortem_DermAlert.md
     
 markdown_extensions:
   - pymdownx.tasklist:

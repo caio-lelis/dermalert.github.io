@@ -23,13 +23,13 @@
 
 ## Como a funcionalidade estará na arquitetura
 
-<img src="https://github.com/DermAlert/dermalert.github.io/blob/main/docs/assets/arquitetura.png?raw=true " alt="Arquitetura"/>
+<img src="https://github.com/caio-lelis/dermalert.github.io/blob/main/docs/assets/arquitetura.png?raw=true " alt="Arquitetura"/>
 
 ## Backlog do Produto
 
-<img src="https://github.com/DermAlert/dermalert.github.io/blob/main/docs/assets/backlog.png?raw=true alt="Backlog do Produto"/>
+<img src="https://github.com/caio-lelis/dermalert.github.io/blob/main/docs/assets/backlog.png?raw=true" alt="Backlog do Produto"/>
 
-<img src="https://github.com/DermAlert/dermalert.github.io/blob/main/docs/assets/roadmap.png?raw=true" alt="Roadmap"/>
+<img src="https://github.com/caio-lelis/dermalert.github.io/blob/main/docs/assets/roadmap.png?raw=true" alt="Roadmap"/>
 
 ## Histórico de Versões
 
